@@ -1,0 +1,59 @@
+name: alshamiat_store
+description: تطبيق إدارة متجر المنتجات الغذائية والعطارة والبهارات
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # قاعدة البيانات
+  drift: ^2.20.0
+  sqlite3_flutter_libs: ^0.5.0
+  path_provider: ^2.1.0
+  path: ^1.9.0
+
+  # إدارة الحالة
+  flutter_riverpod: ^2.5.0
+
+  # توليد فواتير PDF
+  pdf: ^3.11.1
+  printing: ^5.13.4
+
+  # الإعدادات المحلية
+  shared_preferences: ^2.2.0
+
+  # الجدولة في الخلفية
+  workmanager: ^0.8.0
+
+  # اختيار الملفات
+  file_picker: ^8.1.7
+
+  # صلاحيات التخزين
+  permission_handler: ^11.3.0
+
+  # التواريخ
+  intl: 0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  drift_dev: ^2.20.0
+  build_runner: ^2.4.0
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/fonts/
+  fonts:
+    - family: Amiri
+      fonts:
+        - asset: assets/fonts/Amiri-Regular.ttf
+        - asset: assets/fonts/Amiri-Bold.ttf
+          weight: 700
